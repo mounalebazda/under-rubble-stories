@@ -20,7 +20,8 @@ export const FinalVideo = () => {
             poster="/path-to-thumbnail.jpg"
           >
             {/* 👇 Replace this path with your public video path */}
-            <source src="/vid.mp4" type="video/mp4" />
+            {/* <source src="/vid.mp4" type="video/mp4" /> */}
+            <source src={`${import.meta.env.BASE_URL}vid.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
